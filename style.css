@@ -1,0 +1,171 @@
+/* for header.html */
+body {
+
+    background-color: #5475;
+    margin: 0;
+    /* Remove default body margin */
+    padding: 0;
+    background-color: #a4cce7;
+
+}
+
+.navbar {
+    display: flex;
+}
+
+.container-fluid {
+
+    position: relative;
+    top: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 30px;
+
+}
+
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        /* for not showing in center*/
+        position: static !important;
+    }
+}
+
+/* for increasing margin on links*/
+.nav-link {
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+
+}
+
+.navbar-nav {
+    position: relative;
+    left: 25%;
+
+}
+
+
+
+
+/* for index.html page  */
+
+.homeMain {
+    display: flex;
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    top: 40px;
+    border-radius: 16px;
+    min-height: calc(100vh - 200px);
+
+}
+
+.homeLeft {
+    position: relative;
+    top: 12%;
+    flex: 1;
+    /* Make homeLeft take up the available space */
+    transform: translateX(-100px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    padding-left: 110px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    /* animation: slideFromRight 1.5s ease-out; */
+    /* background-color: red; */
+    height: 400px;
+
+}
+
+.homeRight {
+    flex: 1;
+    /* Make homeRight take up the available space */
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 767px) {
+    .homeLeft {
+        width: 100%;
+        transform: none;
+        padding-left: 20px;
+        flex: none;
+    }
+
+    /* for smaller device */
+    .homeRight .indexImage {
+        display: none;
+        /* Hide the image within the homeRight div on smaller screens */
+    }
+
+    /* 
+    .indexImage {
+        max-height: 350px;
+        width: 100%;
+        padding-left: 10px;
+    } */
+
+}
+
+.indexImage {
+    max-height: 350px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+
+
+}
+
+
+h3 {
+
+    font-family: "Poppins", sans-serif;
+    animation: slideFromRight 1.5s ease-out;
+}
+
+.text {
+    font-size: 22px;
+    animation: slideFromRight 1.5s ease-out;
+}
+
+#textChange {
+    color: blue;
+    font-size: 25px;
+}
+
+.passionate {
+    font-size: 20px;
+}
+
+
+/* for animation  */
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(60%);
+    }
+
+    100% {
+        transform: translateX(-1);
+    }
+}
+
+
+
+/* for resume.html file */
+
+.resume {
+    position: relative;
+    top: 40px;
+}

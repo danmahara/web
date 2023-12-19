@@ -1,0 +1,88 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .contactBody {
+            position: relative;
+            top: 40px;
+            display: flex;
+            flex-direction: column;
+
+            min-height: calc(100vh - 200px);
+            align-items: center;
+
+        }
+
+
+        .socialPanel {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            position: relative;
+            height: 100px;
+            align-items: center;
+            border-radius: 16px;
+            top: 200px;
+            width: 30%;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .links {
+            font-size: 30px;
+        }
+
+        @media(max-width:767px) {
+            .socialPanel {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-around;
+                position: relative;
+                top: 200px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        $(function () {
+            // Load the header from header.html
+            $("#header").load("header.html");
+        });
+    </script>
+    <div id="header"></div>
+    <div class="container">
+        <div class="row">
+            <div class="contactBody">
+                <div class=" mt-5 firstDiv">
+                    <p>
+                        <strong> Connect With Me:</strong>
+                        Let's stay in touch! Follow me on LinkedIn, Github or send message on Whatsapp for updates on my
+                        latest
+                        projects, frontend tips, and
+                        industry insights.
+                    </p>
+                </div>
+                <div class="socialPanel">
+                    <a class="links" href="https://www.linkedin.com/in/dan-mahara-1a2846280/"
+                        target="_blank"><iconify-icon icon="skill-icons:linkedin"></iconify-icon></a>
+                    <a class="links" href="https://github.com/danmahara/"><iconify-icon icon="devicon:github"
+                            target="_blank"></iconify-icon></a>
+                    <a class="links" href="https://wa.me/9866520039?text=Hello%20there!" target="_blank"><iconify-icon
+                            icon="logos:whatsapp-icon"></iconify-icon></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

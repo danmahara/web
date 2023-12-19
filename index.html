@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <script>
+        $(function () {
+            // Load the header from header.html
+            $("#header").load("header.html");
+        });
+    </script>
+    <div id="header"></div>
+    <div class="container indexMain">
+        <div class="row">
+            <div class="col-md-12  homeMain">
+                <div class="homeLeft">
+                    <h3>HI,I am
+                        <br> Dan Mahara
+                    </h3>
+                    <p class="text">And I'm a <span id="textChange"></span></p>
+                    <hr>
+                    <p class="passionate">Passionate about creating visually
+                        stunning and seamlessly functional websites.</p>
+                </div>
+                <div class="homeRight">
+                    <img class="indexImage" src="image/img2.JPG" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    let texts = ["Front-end developer", "Full-stack developer"];
+    let currentIndex = 0;
+    let currentCharacterIndex = 0;
+    let isDeleting = false;
+    let timeOutId;
+
+    function changeText() {
+        let textValue = document.getElementById('textChange');
+        let currentText = texts[currentIndex];
+        if (!isDeleting && currentCharacterIndex < currentText.length) {
+
+            textValue.textContent = currentText.substring(0, currentCharacterIndex + 1);
+            currentCharacterIndex++;
+
+
+
+        }
+        else {
+            isDeleting = true;
+
+            if (currentCharacterIndex > 0) {
+                timeOutId = setTimeout(() => {
+                    textValue.textContent = currentText.substring(0, currentCharacterIndex - 1);
+                    currentCharacterIndex--;
+                }, 1000);
+            } else {
+                clearTimeout(timeOutId);
+                isDeleting = false;
+                // Move to the next text
+                currentIndex = (currentIndex + 1) % texts.length;
+
+            }
+
+        }
+    }
+
+
+    setInterval(changeText, 100);
+
+</script>
