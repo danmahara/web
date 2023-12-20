@@ -51,23 +51,21 @@ body {
 
 
 
-
 /* for index.html page  */
 
 .homeMain {
     display: flex;
     position: relative;
+    align-items: center;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     top: 40px;
     border-radius: 16px;
     min-height: calc(100vh - 200px);
-
 }
 
 .homeLeft {
     position: relative;
-    top: 12%;
     flex: 1;
     /* Make homeLeft take up the available space */
     transform: translateX(-100px);
@@ -79,9 +77,8 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     /* animation: slideFromRight 1.5s ease-out; */
-    /* background-color: red; */
     height: 400px;
-
+    width: 100%;
 }
 
 .homeRight {
@@ -97,7 +94,7 @@ body {
     .homeLeft {
         padding-right: 0;
         width: 100%;
-        background-color: grey;
+
         transform: none;
         padding-left: 20px;
         flex: none;
@@ -119,7 +116,7 @@ body {
 }
 
 .text {
-    font-size: 16px;
+    font-size: 18px;
     animation: slideFromRight 1.5s ease-out;
     font-weight: bold;
 
@@ -127,7 +124,7 @@ body {
 
 #textChange {
     color: blue;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     font-family: "comic sans ms", sans-serif;
 }
