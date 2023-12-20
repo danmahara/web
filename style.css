@@ -117,7 +117,7 @@ body {
 }
 
 .indexImage {
-    max-height: 350px;
+    max-height: 350px; 
     max-width: 100%;
     height: auto;
     display: block;
