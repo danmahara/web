@@ -94,7 +94,6 @@ body {
     .homeLeft {
         padding-right: 0;
         width: 100%;
-
         transform: none;
         padding-left: 20px;
         flex: none;
@@ -129,6 +128,8 @@ body {
     font-family: "comic sans ms", sans-serif;
 }
 
+
+
 .passionate {
     font-size: 20px;
 }
@@ -138,18 +139,22 @@ body {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     border-radius: 50%;
-
-
+    /* box-shadow: 0 0 20px 10px #685de2; */
+    box-shadow: 0px 0px 25px 15px rgba(0, 255, 255, 0.7);
+    /* box-shadow: 0px 0px 25px 15px rgba(255, 255, 255, 0.5); */
+    position: relative;
+    right: 10px;
+    /* transition: box-shadow 0.3s ease-in-out; */
 }
 
-
 h3 {
-
     font-family: "Poppins", sans-serif;
     animation: slideFromRight 1.5s ease-out;
 }
+
+
 
 
 

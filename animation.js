@@ -12,9 +12,6 @@ function changeText() {
 
         textValue.textContent = currentText.substring(0, currentCharacterIndex + 1);
         currentCharacterIndex++;
-
-
-
     }
     else {
         isDeleting = true;
@@ -35,5 +32,7 @@ function changeText() {
     }
 }
 
-
 setInterval(changeText, 100);
+
+
+
