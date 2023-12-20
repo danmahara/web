@@ -95,7 +95,9 @@ body {
 
 @media (max-width: 767px) {
     .homeLeft {
+        padding-right: 0;
         width: 100%;
+        background-color: grey;
         transform: none;
         padding-left: 20px;
         flex: none;
@@ -116,8 +118,26 @@ body {
 
 }
 
+.text {
+    font-size: 16px;
+    animation: slideFromRight 1.5s ease-out;
+    font-weight: bold;
+
+}
+
+#textChange {
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "comic sans ms", sans-serif;
+}
+
+.passionate {
+    font-size: 20px;
+}
+
 .indexImage {
-    max-height: 350px; 
+    max-height: 350px;
     max-width: 100%;
     height: auto;
     display: block;
@@ -134,19 +154,6 @@ h3 {
     animation: slideFromRight 1.5s ease-out;
 }
 
-.text {
-    font-size: 22px;
-    animation: slideFromRight 1.5s ease-out;
-}
-
-#textChange {
-    color: blue;
-    font-size: 25px;
-}
-
-.passionate {
-    font-size: 20px;
-}
 
 
 /* for animation  */
@@ -157,7 +164,7 @@ h3 {
     }
 
     100% {
-        transform: translateX(-1);
+        transform: translateX(0);
     }
 }
 
