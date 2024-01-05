@@ -151,17 +151,24 @@ body {
     max-width: 90%;
     height: auto;
     display: block;
-    /* margin: 0 auto; */
+
     border-radius: 50%;
-    /* box-shadow: 0 0 20px 10px #685de2; */
     box-shadow: 0px 0px 25px 15px rgba(0, 255, 255, 0.7);
-    /* box-shadow: 0px 0px 25px 15px rgba(255, 255, 255, 0.5); */
-    position: relative;
-    /* transition: box-shadow 0.3s ease-in-out; */
+    /* position: relative; */
+
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    /* Add transition for  transform */
+
 }
 
 .indexImage:hover {
-    scale: 1.2;
+    transform: scale(1.23);
+}
+
+/* Add a transition effect for the normal state (not hovering) */
+.indexImage:not(:hover) {
+    /* transform: scale(1); */
+    transition: transform 0.2s ease;
 }
 
 h3 {
