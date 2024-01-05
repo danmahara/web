@@ -1,6 +1,7 @@
 /* for header.html */
 body {
 
+
     background-color: #5475;
     margin: 0;
     /* Remove default body margin */
@@ -14,7 +15,6 @@ body {
 }
 
 .container-fluid {
-
     position: relative;
     top: 20px;
     background: rgba(255, 255, 255, 0.2);
@@ -25,6 +25,8 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     padding: 10px 30px;
+    color: rgba(248, 243, 243, 0.918);
+
 
 }
 
@@ -50,8 +52,8 @@ body {
 }
 
 
-
 /* for index.html page  */
+
 
 .homeMain {
     display: flex;
@@ -64,7 +66,20 @@ body {
     min-height: calc(100vh - 200px);
 }
 
+
+.whatsApp:hover {
+    scale: 1.1;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0px 0px 7px green inset,
+        0px 0px 7px green;
+}
+
 .homeLeft {
+    display: flex;
+    flex-direction: column;
     position: relative;
     flex: 1;
     /* Make homeLeft take up the available space */
@@ -81,14 +96,7 @@ body {
     width: 100%;
 }
 
-.homeRight {
-    flex: 1;
-    /* Make homeRight take up the available space */
-    display: flex;
-    align-content: center;
-    align-items: center;
 
-}
 
 @media (max-width: 767px) {
     .homeLeft {
@@ -99,19 +107,15 @@ body {
         flex: none;
     }
 
+    #textChange {
+        font-family: "comic sans ms", sans-serif;
+    }
+
     /* for smaller device */
     .homeRight .indexImage {
         display: none;
         /* Hide the image within the homeRight div on smaller screens */
     }
-
-    /* 
-    .indexImage {
-        max-height: 350px;
-        width: 100%;
-        padding-left: 10px;
-    } */
-
 }
 
 .text {
@@ -128,15 +132,23 @@ body {
     font-family: "comic sans ms", sans-serif;
 }
 
-
-
 .passionate {
     font-size: 20px;
 }
 
+.homeRight {
+    flex: 1;
+    /* Make homeRight take up the available space */
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+}
+
 .indexImage {
+
     max-height: 350px;
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     display: block;
     /* margin: 0 auto; */
@@ -145,8 +157,11 @@ body {
     box-shadow: 0px 0px 25px 15px rgba(0, 255, 255, 0.7);
     /* box-shadow: 0px 0px 25px 15px rgba(255, 255, 255, 0.5); */
     position: relative;
-    right: 10px;
     /* transition: box-shadow 0.3s ease-in-out; */
+}
+
+.indexImage:hover {
+    scale: 1.2;
 }
 
 h3 {
@@ -154,7 +169,25 @@ h3 {
     animation: slideFromRight 1.5s ease-out;
 }
 
+/* for icon whatsApp */
+.socialDiv {
+    display: flex;
+    font-size: 30px;
+    position: absolute;
+    bottom: 10%;
+    right: 50%;
 
+}
+
+.whatsApp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: solid green 2px;
+}
 
 
 
@@ -170,13 +203,93 @@ h3 {
     }
 }
 
-
-
-
-
 /* for resume.html file */
 
 .resume {
     position: relative;
     top: 40px;
+}
+
+/* for contact file style */
+
+.contactBody {
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 200px);
+    align-items: center;
+
+}
+
+
+.socialPanel {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    position: relative;
+    height: 100px;
+    align-items: center;
+    border-radius: 16px;
+    top: 200px;
+    width: 30%;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* for github  */
+.gitHub {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: solid black 2px;
+}
+
+.gitHub:hover {
+    scale: 1.1;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0px 0px 7px black inset,
+        0px 0px 7px black;
+}
+
+/*  */
+.linkedIn {
+    font-size: 26px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: solid blue 2px;
+}
+
+.linkedIn:hover {
+    scale: 1.1;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0px 0px 7px blue inset,
+        0px 0px 7px blue;
+}
+
+@media(max-width:767px) {
+    .socialPanel {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        position: relative;
+        top: 200px;
+        width: 100%;
+    }
 }

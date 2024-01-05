@@ -1,5 +1,5 @@
 
-let texts = ["Front-end developer", "Full-stack developer"];
+let texts = ["Full-stack developer"];
 let currentIndex = 0;
 let currentCharacterIndex = 0;
 let isDeleting = false;

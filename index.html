@@ -33,17 +33,20 @@
                     <hr>
                     <p class="passionate">Passionate about creating visually
                         stunning and seamlessly functional websites.</p>
+                    <div class="socialDiv">
+                        <a class="links whatsApp" href="https://wa.me/9866520039?text=Hello%20there!"
+                            target="_blank"><iconify-icon icon="logos:whatsapp-icon"></iconify-icon></a>
+                    </div>
                 </div>
                 <div class="homeRight">
-                    <img class="indexImage neon-shadow" src="image/img.JPG" alt="image"
-                        onmousemove="changeBoxShadow(event)">
+                    <img class="indexImage neon-shadow" src="image/img.JPG" alt="image">
                 </div>
             </div>
         </div>
     </div>
     <script>
+        //  onmousemove="changeBoxShadow(event)" // use this on html code, if you want to change color on move move 
         const image = document.querySelector('.indexImage');
-
         function changeBoxShadow() {
             const boundingRect = image.getBoundingClientRect();
             const percentX = Math.random();
