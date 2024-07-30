@@ -47,28 +47,28 @@
     </div>
     <script>
         //  onmousemove="changeBoxShadow(event)" // use this on html code, if you want to change color on move move 
-        const image = document.querySelector('.indexImage');
-        function changeBoxShadow() {
-            const boundingRect = image.getBoundingClientRect();
-            const percentX = Math.random();
-            const percentY = Math.random();
+        // const image = document.querySelector('.indexImage');
+        // function changeBoxShadow() {
+        //     const boundingRect = image.getBoundingClientRect();
+        //     const percentX = Math.random();
+        //     const percentY = Math.random();
 
-            const color = getColorAtPosition(percentX, percentY);
-            const boxShadow = `0px 0px 25px 15px ${color}`;
+        //     const color = getColorAtPosition(percentX, percentY);
+        //     const boxShadow = `0px 0px 25px 15px ${color}`;
 
-            image.style.boxShadow = boxShadow;
-        }
+        //     image.style.boxShadow = boxShadow;
+        // }
 
-        function getColorAtPosition(x, y) {
-            const red = Math.floor(x * 255);
-            const green = Math.floor(y * 255);
-            const blue = Math.floor((x + y) * 255);
+        // function getColorAtPosition(x, y) {
+        //     const red = Math.floor(x * 255);
+        //     const green = Math.floor(y * 255);
+        //     const blue = Math.floor((x + y) * 255);
 
-            return `rgba(${red},${green},${blue},0.7)`;
-        }
+        //     return `rgba(${red},${green},${blue},0.7)`;
+        // }
 
-        // Change color every 100 milliseconds
-        setInterval(changeBoxShadow, 1000);
+        // // Change color every 100 milliseconds
+        // setInterval(changeBoxShadow, 1000);
 
     </script>
 

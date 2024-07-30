@@ -10,7 +10,57 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            padding-top: 20px;
+        }
 
+        .container {
+            margin-top: 50px;
+            max-width: 800px;
+            /* margin: 0 auto; */
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .firstDiv p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .socialPanel {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .socialPanel .links {
+            font-size: 2em;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .socialPanel .links:hover {
+            color: #007bff;
+        }
+
+        .links.linkedIn {
+            color: #0e76a8;
+        }
+
+        .links.gitHub {
+            color: #333;
+        }
+
+        .links.whatsApp {
+            color: #25D366;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,18 +76,16 @@
             <div class="col-md-12 contactBody">
                 <div class="firstDiv">
                     <p>
-                        <strong> Connect With Me:</strong>
-                        Let's stay in touch! Follow me on LinkedIn, Github or send message on Whatsapp for updates on my
-                        latest
-                        projects, frontend tips, and
-                        industry insights.
+                        <strong>Get in Touch:</strong>
+                        Follow me on LinkedIn, GitHub, or send a message on WhatsApp. Stay updated with my latest projects and insights!
                     </p>
+                    
                 </div>
-                <div class="socialPanel ">
+                <div class="socialPanel">
                     <a class="links linkedIn" href="https://www.linkedin.com/in/dan-mahara-1a2846280/"
                         target="_blank"><iconify-icon icon="skill-icons:linkedin"></iconify-icon></a>
-                    <a class="links gitHub" href="https://github.com/danmahara/"><iconify-icon icon="devicon:github"
-                            target="_blank"></iconify-icon></a>
+                    <a class="links gitHub" href="https://github.com/danmahara/" target="_blank"><iconify-icon
+                            icon="devicon:github"></iconify-icon></a>
                     <a class="links whatsApp" href="https://wa.me/9866520039?text=Hello%20there!"
                         target="_blank"><iconify-icon icon="logos:whatsapp-icon"></iconify-icon></a>
                 </div>
